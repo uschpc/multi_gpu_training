@@ -13,23 +13,6 @@ $ git clone -b ITP-450 https://github.com/PrincetonUniversity/multi_gpu_training
 $ cd multi_gpu_training
 ```
 
-<!--
-## Attendance
 
-- Please check-in using [this link](https://cglink.me/2gi/c1471627125105938).
-
-## Workshop Survey
-
-Toward the end of the workshop please complete [this survey](https://forms.gle/pGi2tkzb7WCtVMcQ6).
--->
-
-<!--
-## Reminders
-
-- The live workshop will be recorded
-- Zoom: [https://princeton.zoom.us/my/picscieworkshop](https://princeton.zoom.us/my/picscieworkshop)
-- Request an account on [Adroit](https://forms.rc.princeton.edu/registration/?q=adroit) if needed
-- To use GPUs during the live workshop: `#SBATCH --reservation=multigpu`
--->
 
 
