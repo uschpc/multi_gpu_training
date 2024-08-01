@@ -8,12 +8,9 @@ The material in this repo demonstrates multi-GPU training using PyTorch. Part 1 
 Make sure you can run Python on Adroit:
 
 ```bash
-$ ssh <YourNetID>@adroit.princeton.edu  # VPN required if off-campus
-$ git clone https://github.com/PrincetonUniversity/multi_gpu_training.git
+$ ssh <YourNetID>@discovery.usc.edu  # VPN required if off-campus
+$ git clone -b ITP-450 https://github.com/PrincetonUniversity/multi_gpu_training.git
 $ cd multi_gpu_training
-$ module load anaconda3/2023.9
-(base) $ python --version
-Python 3.11.5
 ```
 
 <!--
