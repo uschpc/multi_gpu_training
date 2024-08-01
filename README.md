@@ -32,10 +32,4 @@ Toward the end of the workshop please complete [this survey](https://forms.gle/p
 - To use GPUs during the live workshop: `#SBATCH --reservation=multigpu`
 -->
 
-### Getting Help
 
-If you encounter any difficulties with the material in this guide then please send an email to <a href="mailto:cses@princeton.edu">cses@princeton.edu</a> or attend a <a href="https://researchcomputing.princeton.edu/education/help-sessions">help session</a>.
-
-### Authorship
-
-This guide was created by Mengzhou Xia, Alexander Wettig and Jonathan Halverson. Members of Princeton Research Computing made contributions to this material.
