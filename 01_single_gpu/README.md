@@ -4,8 +4,6 @@ It is important to optimize your script for the single-GPU case before moving to
 
 Here we train a CNN on the MNIST dataset using a single GPU as an example. We profile the code and make performance improvements.
 
-This tutorial uses PyTorch but the steps are the similar for TensorFlow. See our [TensorFlow](https://researchcomputing.princeton.edu/support/knowledge-base/tensorflow#install) page and the [performance tuning guide](https://tigress-web.princeton.edu/~jdh4/TensorflowPerformanceOptimization_GTC2021.pdf).
-
 ## Step 1: Activate the Environment
 
 For simplicity we will use a pre-installed Conda environmnet. Run these commands to activate the environment:
