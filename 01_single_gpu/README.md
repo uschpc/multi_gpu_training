@@ -76,17 +76,17 @@ Finally, submit the job while specifying the reservation:
 You should find that the code runs in about 20-80 seconds with 1 CPU-core depending on which GPU node was used:
 
 ```
-$ seff 1937315
-Job ID: 1937315
-Cluster: gpu
-User/Group: aturing/cses
+$ seff 24752610
+Job ID: 24752610
+Cluster: discovery
+User/Group: haoji/haoji
 State: COMPLETED (exit code 0)
 Cores: 1
-CPU Utilized: 00:00:36
-CPU Efficiency: 94.74% of 00:00:38 core-walltime
-Job Wall-clock time: 00:00:38
-Memory Utilized: 593.32 MB
-Memory Efficiency: 7.24% of 8.00 GB
+CPU Utilized: 00:00:53
+CPU Efficiency: 94.64% of 00:00:56 core-walltime
+Job Wall-clock time: 00:00:56
+Memory Utilized: 1.31 GB
+Memory Efficiency: 16.43% of 8.00 GB
 ```
 
 You can also check `slurm-#######.out` file.
