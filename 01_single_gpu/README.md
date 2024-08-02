@@ -32,7 +32,7 @@ We will profile the `train` function using `line_profiler` (see line 39) by addi
 def train(args, model, device, train_loader, optimizer, epoch):
 ```
 
-Next, download the data while on the login node since the compute nodes do not have internet access:
+Next, download the data on the compute node:
 
 ```
 (torch-env) $ python download_mnist.py
