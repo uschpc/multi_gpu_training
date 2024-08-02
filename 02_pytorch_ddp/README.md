@@ -22,9 +22,7 @@ If you would like more background then read through these PyTorch pages:
 Here are some webpages and videos:
 
 + [YouTube Video](https://www.youtube.com/watch?v=TibQO_xv1zc)  
-+ [GitHub Gist](https://gist.github.com/TengdaHan/1dd10d335c7ca6f13810fff41e809904)  
-+ [GWDG Webpage](https://info.gwdg.de/wiki/doku.php?id=wiki:hpc:pytorch_on_the_hpc_clusters)  
-+ [SageMaker Webpage](https://sagemaker.readthedocs.io/en/stable/api/training/sdp_versions/latest/smd_data_parallel_pytorch.html) 
+
 
 ### Be Aware
 
