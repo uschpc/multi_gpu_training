@@ -96,7 +96,7 @@ You can also check `slurm-#######.out` file.
 
 ## Step 3: Analyze the Profiling Data
 
-We installed [line_profiler](https://researchcomputing.princeton.edu/python-profiling) into the Conda environment and profiled the code. To analyze the profiling data:
+We installed line_profiler into the Conda environment and profiled the code. To analyze the profiling data:
 
 ```
 (torch-env) $ python -m line_profiler -rmt *.lprof 
