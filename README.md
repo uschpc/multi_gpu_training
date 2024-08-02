@@ -9,7 +9,7 @@ Make sure you can run Python on Adroit:
 
 ```bash
 $ ssh <YourNetID>@discovery.usc.edu  # VPN required if off-campus
-$ git clone https://github.com/PrincetonUniversity/multi_gpu_training.git
+$ git clone https://github.com/uschpc/multi_gpu_training.git
 $ cd multi_gpu_training
 ```
 
