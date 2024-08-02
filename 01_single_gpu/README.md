@@ -75,12 +75,12 @@ Finally, submit the job while specifying the reservation:
 (torch-env) $ sbatch job.slurm
 ```
 
-You should find that the code runs in about 20-40 seconds with 1 CPU-core depending on which A100 GPU node was used:
+You should find that the code runs in about 20-80 seconds with 1 CPU-core depending on which GPU node was used:
 
 ```
 $ seff 1937315
 Job ID: 1937315
-Cluster: adroit
+Cluster: gpu
 User/Group: aturing/cses
 State: COMPLETED (exit code 0)
 Cores: 1
