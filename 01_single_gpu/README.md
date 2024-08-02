@@ -67,12 +67,12 @@ conda activate torch-env
 kernprof -o ${SLURM_JOBID}.lprof -l mnist_classify.py --epochs=3
 ```
 
-`kernprof` is a profiler that wraps Python. Adroit has two different A100 nodes. Learn how to choose [specific nodes](https://researchcomputing.princeton.edu/systems/adroit#gpus).
+`kernprof` is a profiler that wraps Python. 
 
 Finally, submit the job while specifying the reservation:
 
 ```bash
-(torch-env) $ sbatch --reservation=multigpu job.slurm
+(torch-env) $ sbatch job.slurm
 ```
 
 You should find that the code runs in about 20-40 seconds with 1 CPU-core depending on which A100 GPU node was used:
