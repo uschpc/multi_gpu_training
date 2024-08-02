@@ -184,13 +184,11 @@ It is essential to optimize your code before going to multi-GPU training since t
 Next, we focus on scaling the code to multiple GPUs (go to [next section](../02_pytorch_ddp)).
 
 ## How was the Conda environment made?
-
-Please do not do this during the workshop. Your `/home` directory on Adroit probably has a capacity of 9.3 GB. To store Conda environments in another location see [this page](https://researchcomputing.princeton.edu/support/knowledge-base/checkquota). See the Research Computing knowledge base on [PyTorch](https://researchcomputing.princeton.edu/support/knowledge-base/pytorch).
-
+Before you use Conda, make sure you have done the intitial setups of Conda following the link below: https://www.carc.usc.edu/user-guides/data-science/building-conda-environment
 ```bash
-$ ssh <YourNetID>@adroit.princeton.edu
-$ module load anaconda3/2023.9
-$ conda create --name torch-env pytorch torchvision pytorch-cuda=12.1 -c pytorch -c nvidia -y
-$ conda activate torch-env
-$ conda install line_profiler --channel conda-forge
+$ ssh <YourNetID>@discovery.usc.edu
+$ mamba create --name torch-env
+$ mamba activate torch-env
+$ mamba install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+$ mamba install line_profiler --channel conda-forge
 ```
