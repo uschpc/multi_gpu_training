@@ -149,7 +149,7 @@ One technique that was discussed in the [Performance Tuning Guide](https://pytor
 In `mnist_classify.py`, change `num_workers` from 1 to 8. And then in `job.slurm` change `--cpus-per-task` from 1 to 8. Then run the script again and note the speed-up:
 
 ```
-(torch-env) $ sbatch --reservation=multigpu job.slurm
+(torch-env) $ sbatch job.slurm
 ```
 
 How did the profiling data change? Watch the [video](https://www.youtube.com/watch?v=wqTgM-Wq4YY&t=296s) for the solution. For consistency between the Slurm script and PyTorch script, one can use:
