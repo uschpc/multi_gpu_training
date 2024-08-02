@@ -157,13 +157,4 @@ It is essential to optimize your code before going to multi-GPU training since t
 
 Next, we focus on scaling the code to multiple GPUs (go to [next section](../02_pytorch_ddp)).
 
-## How was the Conda environment made?
-Before you use Conda, make sure you have done the intitial setups of Conda following the link below: https://www.carc.usc.edu/user-guides/data-science/building-conda-environment
-```bash
-$ ssh <YourNetID>@discovery.usc.edu
-$ salloc --partition=gpu --gres=gpu:1 --cpus-per-task=8 --mem=32GB --time=1:00:00
-$ mamba create --name torch-env
-$ mamba activate torch-env
-$ mamba install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
-$ mamba install line_profiler --channel conda-forge
-```
+
