@@ -91,7 +91,7 @@ Memory Utilized: 593.32 MB
 Memory Efficiency: 7.24% of 8.00 GB
 ```
 
-For jobs that run for longer than 1 minute, one should use the `jobstats` command instead of `seff`. Use `shistory -n` to see which node was used or look in the `slurm-#######.out` file.
+You can also check `slurm-#######.out` file.
 
 
 ## Step 3: Analyze the Profiling Data
