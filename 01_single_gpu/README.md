@@ -9,9 +9,9 @@ Here we train a CNN on the MNIST dataset using a single GPU as an example. We pr
 For simplicity we will use a pre-installed Conda environmnet. Run these commands to activate the environment:
 
 ```bash
-$ ssh <YourNetID>@adroit.princeton.edu
-$ module load anaconda3/2023.9
-$ conda activate /home/jdh4/.conda/envs/torch-env
+$ ssh <YourNetID>@discovery.usc.edu
+$ salloc --partition=gpu --gres=gpu:1 --cpus-per-task=8 --mem=32GB --time=1:00:00 
+$ conda activate torch-env
 ```
 
 Watch a [video](https://www.youtube.com/watch?v=wqTgM-Wq4YY&t=296s) that covers everything on this page for single-GPU training with [profiling Python](https://researchcomputing.princeton.edu/python-profiling) using `line_profiler`.
