@@ -14,8 +14,6 @@ $ salloc --partition=gpu --gres=gpu:1 --cpus-per-task=8 --mem=32GB --time=1:00:0
 $ conda activate torch-env
 ```
 
-Watch a [video](https://www.youtube.com/watch?v=wqTgM-Wq4YY&t=296s) that covers everything on this page for single-GPU training with [profiling Python](https://researchcomputing.princeton.edu/python-profiling) using `line_profiler`.
-
 ## Step 2: Run and Profile the Script
 
 First, inspect the script ([see script](mnist_classify.py)) by running these commands:
