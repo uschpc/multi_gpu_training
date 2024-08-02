@@ -15,6 +15,3 @@ $ mamba install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c n
 $ mamba install line_profiler --channel conda-forge
 $ git clone https://github.com/uschpc/multi_gpu_training.git
 $ cd multi_gpu_training
-
-
-
