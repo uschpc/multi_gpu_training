@@ -132,7 +132,7 @@ The slowest line is number 42 which consumes 84.5% of the time in the training f
 
 ### Examine Your GPU Utilization
 
-You can check gpu utilizatio using nvidia-smi command. also do this on a [compute node in real time](https://researchcomputing.princeton.edu/support/knowledge-base/gpu-computing#gpu-utilization).
+You can check gpu utilizatio using "watch -n 1 nvidia-smi" command. To exit watch session, use Ctrl + C. 
 
 Note that GPU utilization as measured using nvidia-smi is only a measure of the fraction of the time that a GPU kernel is running on the GPU. It says nothing about how many CUDA cores are being used or how efficiently the GPU kernels have been written. However, for codes used by large communities, one can generally associate GPU utilization with overall GPU efficiency. For a more accurate measure of GPU utilization, use [Nsight Systems or Nsight Compute](https://researchcomputing.princeton.edu/support/knowledge-base/gpu-computing#profiling) to measure the occupancy.
 
