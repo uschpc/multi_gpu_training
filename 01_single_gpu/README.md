@@ -130,7 +130,7 @@ The slowest line is number 42 which consumes 84.5% of the time in the training f
 
 ### Examine Your GPU Utilization
 
-You can check gpu utilizatio using "watch -n 1 nvidia-smi" command. To exit watch session, use Ctrl + C. 
+You can check gpu utilization using "watch -n 1 nvidia-smi" command. To exit watch session, use Ctrl + C. 
 
 ## Step 4: Work through the Performance Tuning Guide
 
