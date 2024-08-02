@@ -93,12 +93,6 @@ Memory Efficiency: 7.24% of 8.00 GB
 
 For jobs that run for longer than 1 minute, one should use the `jobstats` command instead of `seff`. Use `shistory -n` to see which node was used or look in the `slurm-#######.out` file.
 
-Some variation in the run time is expected when multiple users are running on the same node. Also, the two A100 GPU nodes are not equal:
-
-| hostname | CPU | GPU |
-| ----------- | ----------- | ----------- |
-| adroit-h11g1 | Intel Xeon Gold 6442Y @ 2.6GHz | NVIDIA A100 80GB PCIe |
-| adroit-h11g2 | Intel Xeon Gold 6342  @ 2.8GHz | NVIDIA A100-PCIE-40GB |
 
 ## Step 3: Analyze the Profiling Data
 
