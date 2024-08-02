@@ -152,22 +152,6 @@ In `mnist_classify.py`, change `num_workers` from 1 to 8. And then in `job.slurm
 (torch-env) $ sbatch job.slurm
 ```
 
-How did the profiling data change? Watch the [video](https://www.youtube.com/watch?v=wqTgM-Wq4YY&t=296s) for the solution. For consistency between the Slurm script and PyTorch script, one can use:
-
-```python
-import os
-...
-    cuda_kwargs = {'num_workers': int(os.environ["SLURM_CPUS_PER_TASK"]),
-...
-```
-
-Several environment variables are set in the Slurm script. These can be referenced by the PyTorch script as demonstrated above. To see all of the available environment variables that are set in the Slurm script, add this line to `job.slurm`:
-
-```
-printenv | sort
-```
-
-Consider these external data loading libraries: [ffcv](https://github.com/libffcv/ffcv) and [NVIDIA DALI](https://developer.nvidia.com/dali).
 
 ## Summary
 
