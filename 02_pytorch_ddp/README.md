@@ -70,6 +70,36 @@ train_loader  = torch.utils.data.DataLoader(dataset1,
                                             pin_memory=True)
 ```
 
+## Step 1: Activate the Environment
+
+For simplicity we will use a pre-installed Conda environmnet. Run these commands to activate the environment:
+
+```bash
+$ ssh <YourNetID>@discovery.usc.edu
+$ salloc --partition=gpu --gres=gpu:1 --cpus-per-task=8 --mem=32GB --time=1:00:00 
+$ conda activate torch-env
+```
+
+## Step 2: Run and Profile the Script
+
+First, inspect the script ([see script](mnist_classify.py)) by running these commands:
+
+```bash
+(torch-env) $ cd multi_gpu_training/02_pytorch_ddp
+(torch-env) $ cat mnist_classify.py
+```
+
+Next, download the data on the compute node:
+
+```
+(torch-env) $ python download_mnist.py
+```
+
+Below is the Slurm script:
+
+
+
+
 ## Simple DDP Script
 
 The following can be used as a simple use case of DPP:
