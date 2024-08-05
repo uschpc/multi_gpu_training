@@ -80,7 +80,7 @@ $ salloc --partition=gpu --gres=gpu:1 --cpus-per-task=8 --mem=32GB --time=1:00:0
 $ conda activate torch-env
 ```
 
-## Step 2: Run and Profile the Script
+## Step 2: Download data and Run the Script
 
 First, inspect the script ([see script](mnist_classify.py)) by running these commands:
 
@@ -92,7 +92,7 @@ First, inspect the script ([see script](mnist_classify.py)) by running these com
 Next, download the data on the compute node:
 
 ```
-(torch-env) $ python download_mnist.py
+(torch-env) $ python download_data.py
 ```
 
 Below is the Slurm script:
@@ -174,7 +174,7 @@ Below is a full Slurm script for using DDP for Della (GPU):
 #SBATCH --gres=gpu:2             # number of allocated gpus per node
 #SBATCH --time=00:01:00          # total run time limit (HH:MM:SS)
 
-export MASTER_PORT=$(get_free_port)
+export MASTER_PORT=$'12355'
 export WORLD_SIZE=$(($SLURM_NNODES * $SLURM_NTASKS_PER_NODE))
 echo "WORLD_SIZE="$WORLD_SIZE
 
@@ -255,10 +255,8 @@ Below is an example Slurm script for DDP:
 #SBATCH --mem=32G                # total memory per node (4 GB per cpu-core is default)
 #SBATCH --gres=gpu:2             # number of gpus per node
 #SBATCH --time=00:05:00          # total run time limit (HH:MM:SS)
-#SBATCH --mail-type=begin        # send email when job begins
-#SBATCH --mail-type=end          # send email when job ends
 
-export MASTER_PORT=$(get_free_port)
+export MASTER_PORT='12355'
 export WORLD_SIZE=$(($SLURM_NNODES * $SLURM_NTASKS_PER_NODE))
 echo "WORLD_SIZE="$WORLD_SIZE
 
