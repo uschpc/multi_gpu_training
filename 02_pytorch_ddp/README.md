@@ -86,7 +86,7 @@ First, inspect the script ([see script](mnist_classify.py)) by running these com
 
 ```bash
 (torch-env) $ cd multi_gpu_training/02_pytorch_ddp
-(torch-env) $ cat mnist_classify.py
+(torch-env) $ cat simple_ddp.py
 ```
 
 Next, download the data on the compute node:
