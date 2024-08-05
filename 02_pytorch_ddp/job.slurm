@@ -18,7 +18,9 @@ export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
 
 module purge
-module load anaconda3/2023.9
+
+eval "$(conda shell.bash hook)"
+
 conda activate torch-env
 
 srun python mnist_classify_ddp.py --epochs=2
