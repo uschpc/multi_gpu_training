@@ -453,24 +453,12 @@ Execute the commands below to run the example above:
 ```bash
 $ git clone https://github.com/PrincetonUniversity/multi_gpu_training.git
 $ cd multi_gpu_training/02_pytorch_ddp
-$ module load anaconda3/2023.9
 $ conda activate torch-env
 (torch-env) $ python download_data.py
-(torch-env) $ sbatch --reservation=multigpu job.slurm
+(torch-env) $ sbatch job.slurm
 ```
 
 ## Memory issues
 
 Use `gradient_as_bucket_view=True` when making the DDP model to decrease the required memory by 1/3.
 
-## NGC Container
-
-If you are using the [PyTorch container](https://researchcomputing.princeton.edu/support/knowledge-base/pytorch#containers) then the last line of your Slurm script will look like:
-
-```
-srun singularity exec --nv $HOME/software/pytorch_23.09-py3.sif python mnist_classify_ddp.py --epochs=3
-```
-
-## Notes on Traverse
-
-Be sure to use the example above for DDP. Do not use the file-based method for initializing the process group. Be sure to follow the [installation directions](https://researchcomputing.princeton.edu/support/knowledge-base/tensorflow#install) using the MIT Conda channel.
