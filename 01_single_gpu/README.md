@@ -36,6 +36,8 @@ Next, download the data on the compute node:
 (torch-env) $ python download_mnist.py
 ```
 
+After download finished, enter 'exit' to exit from the compute node and return to the login node. 
+
 Below is the Slurm script:
 
 ```bash
