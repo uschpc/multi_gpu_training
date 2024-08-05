@@ -455,15 +455,7 @@ In the script above the number of workers is taken directly from the value of `-
 cuda_kwargs = {'num_workers': int(os.environ["SLURM_CPUS_PER_TASK"]), 'pin_memory': True, 'shuffle': True}
 ```
 
-Execute the commands below to run the example above:
 
-```bash
-$ cd multi_gpu_training/02_pytorch_ddp
-$ conda activate torch-env
-(torch-env) $ sbatch job.slurm
-```
 
-## Memory issues
 
-Use `gradient_as_bucket_view=True` when making the DDP model to decrease the required memory by 1/3.
 
