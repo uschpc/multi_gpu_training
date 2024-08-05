@@ -94,6 +94,7 @@ Next, download the data on the compute node:
 ```
 (torch-env) $ python download_data.py
 ```
+After download is completed, type 'exit' to exit from the compute node and return to the login node. 
 
 Below is the Slurm script:
 
@@ -457,10 +458,8 @@ cuda_kwargs = {'num_workers': int(os.environ["SLURM_CPUS_PER_TASK"]), 'pin_memor
 Execute the commands below to run the example above:
 
 ```bash
-$ git clone https://github.com/PrincetonUniversity/multi_gpu_training.git
 $ cd multi_gpu_training/02_pytorch_ddp
 $ conda activate torch-env
-(torch-env) $ python download_data.py
 (torch-env) $ sbatch job.slurm
 ```
 
