@@ -117,11 +117,11 @@ def main():
         ])
     dataset1 = datasets.MNIST('data',
                               train=True,
-                              download=False,
+                              download=True,
                               transform=transform)
     dataset2 = datasets.MNIST('data',
                               train=False,
-                              download=False,
+                              download=True,
                               transform=transform)
 
     world_size = int(os.environ["WORLD_SIZE"])
